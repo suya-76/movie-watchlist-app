@@ -1,0 +1,177 @@
+/* HomePage.css */
+.home-page {
+  color: #ffffff;
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+}
+
+.home-page .header {
+  background: #000000; 
+  color: white; 
+  padding: 10px 20px; 
+  width: 100%; 
+  box-sizing: border-box; 
+  margin-top: 0;
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between;
+
+  }
+
+  .items-inside-header {
+    display: flex; 
+    align-items: center; 
+    width: 100%;
+  }
+
+  .container {
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+ 
+  
+  .home-page .header .logo {
+    height: 50px; 
+    margin-left: 20px;
+    cursor: pointer;
+ }
+  
+  .home-page #head {
+    color: rgb(134, 134, 131); 
+    flex: 1; 
+    text-align: center;
+  }
+  
+  .home-page .search-form {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    flex-shrink: 0; 
+  }
+  
+  .home-page .search-form input {
+    border-radius: 20px; 
+    padding: 10px; 
+    width: 200px; 
+  }
+  .search-btn{
+    padding: 10px;
+  }
+  
+  .home-page .movie-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 20px;
+    justify-content: center; 
+    margin-bottom: 30px;
+  }
+  
+  .home-page .movie-grid .col-md-4 {
+    flex: 1 1 30%; 
+    margin-bottom: 20px;
+    max-width: 30%;
+  }
+
+  .home-page .movie-grid-row{
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+  .btn-cont {
+    margin-bottom: 20px;
+  }
+
+  
+  .logo {
+    cursor: pointer;
+    
+  }
+
+ 
+
+  
+  .user-email{
+    width: 100%; 
+    margin: 0;
+    text-align: center;
+    border-radius: 5px; 
+  }
+  
+  .movie-grid {
+    margin-top: 2rem;
+  }
+
+  #about{
+    background: #000000;
+    color: white; 
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+
+  #about h4, p{
+    color: #828080;
+    text-align: justify;
+  }
+
+
+  /* navbar */
+
+  nav {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    /* position: sticky; */
+    top: 0;
+    
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    padding: 0;
+}
+
+nav li {
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+nav li a {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+
+.nav-icon {
+    font-size: 20px;
+    color: #ff5722;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+   .container {
+    padding: 0 10px;
+    
+  }
+  .home-page .movie-grid .col-md-4 {
+    max-width: 100%; 
+  }
+}

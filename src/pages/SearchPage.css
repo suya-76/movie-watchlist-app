@@ -1,0 +1,166 @@
+/* HomePage.css */
+  
+.search-page{
+  color: #ffffff;
+  align-items: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative; 
+}
+
+.search-page .header {
+    background: #000000; 
+    color: white; 
+    padding: 10px 20px; 
+    width: 100%; 
+    box-sizing: border-box; 
+    margin-top: 0;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+  }
+
+  .items-inside-header {
+    display: flex; 
+    align-items: center; 
+    width: 100%;
+  }
+  
+  
+  .search-page .header .logo {
+    height: 50px; 
+    cursor: pointer;
+  }
+  
+
+  .search-page #head {
+    color: rgb(134, 134, 131); 
+    flex: 1; 
+    text-align: center;
+  }
+  
+  .search-page .search-form {
+    display: flex; 
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0; 
+  }
+  
+  .search-page .search-form input {
+    border-radius: 20px;
+    padding: 10px;
+    width: 200px;
+  }
+  .search-btn{
+    padding: 10px;
+  }
+  
+  .search-page .movie-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 20px;
+    justify-content: center; 
+    margin-bottom: 30px;
+  }
+  
+  .search-page .movie-grid .col-md-4 {
+    flex: 1 1 30%; 
+    margin-bottom: 20px;
+    z-index: 1;
+  }
+
+  .search-page .movie-grid-row{
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; 
+    width: 250px;
+    height: 100%;
+    background-color: rgb(16, 16, 16);
+    color: rgb(161, 161, 161);
+    transition: left 0.3s ease;
+    z-index: 1000;
+    
+  }
+  
+  .sidebar.active {
+    left: 0; 
+  }
+  
+  .sidebar-content {
+    padding: 0.5rem;
+    
+    
+  }
+  .sidebar .user-email{
+    margin-top: 70px;
+  }
+  .sidebar button{
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px; 
+    margin: 10px;
+    font-size: 16px;
+    width: 180px; 
+    padding: 10px;
+    margin-left: 30px;
+  }
+
+  .sidebar button:hover{
+    transform: 1.5s;
+    color: rgb(31, 154, 113);
+  }
+
+
+  .footer-buttons {
+    margin-top: 20px;
+    text-align: center; 
+  }
+  
+.btn-1, .btn-2{
+  display: inline-block;
+  width: 200px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 20px;
+
+}
+
+.btn-1:hover, .btn-2:hover {
+  background-color: #0056b3;
+}
+  
+  
+  
+
+ 
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px; 
+  }
+
+  
+  
+  .movie-grid .col-md-4 {
+    max-width: 100%;
+  }
+}
+ 

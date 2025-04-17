@@ -1,0 +1,51 @@
+/* src/components/MovieCard.css */
+
+.movie-card {
+  background-color: #000000;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-poster {
+  width: 200px; 
+  height: 250px; 
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.movie-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  height: 70px;
+  color: rgb(147, 150, 147);
+}
+
+.movie-card p {
+  color: #c3baba;
+  text-align: center;
+  font-size: 20px;
+}
+
+.movie-card button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.movie-card button:hover {
+  background-color: #0056b3;
+}
